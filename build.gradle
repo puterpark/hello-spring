@@ -9,12 +9,16 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 repositories {
+	// 라이브러리 다운로드
 	mavenCentral()
 }
 
 dependencies {
+	// 타임리프
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	// 스프링부트 웹
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// JUnit
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
