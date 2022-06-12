@@ -30,6 +30,12 @@ hello-static 관련 컨트롤러가 없기 때문에 리소스에 있는 hello-s
 ### MVC와 템플릿 엔진
 > 서버에서 변형하여 HTML에 내려주는 방식
 
+MVC : Model, View, Controller  
+View : 화면을 그리는데만 집중  
+Controller : 비즈니스 로직 수행  
+http://localhost:8080/hello-mvc?name=Puter
+
 ### API
 > 앱 클라이언트와 JSON으로 통신
 > 서버끼리 통신할 때
+
