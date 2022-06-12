@@ -39,3 +39,9 @@ http://localhost:8080/hello-mvc?name=Puter
 > 앱 클라이언트와 JSON으로 통신
 > 서버끼리 통신할 때
 
+`@ResponseBody`를 사용하면 `viewResolver`를 사용하지 않고 직접 반환함   
+http://localhost:8080/hello-string?name=Puter
+
+`@ResponseBody`를 사용하고, 객체를 반환하면 객체가 `JSON`으로 변환됨  
+`viewResolver`대신 `HttpMessageConverter`가 동작됨    
+http://localhost:8080/hello-api?name=Puter
