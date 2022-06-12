@@ -15,3 +15,21 @@ cd D:\workspace\hello-spring
 cd build/libs
 java -jar hello-spring-0.0.1-SNAPSHOT.jar
 ```
+
+---
+  
+## 스프링 웹 개발 기초
+
+### 정적 컨텐츠
+> 파일을 그대로 웹 브라우저에서 전달  
+> 어떤 프로그래밍은 할 수 없음
+
+resources/static/hello-static.html → http://localhost:8080/hello-static.html  
+hello-static 관련 컨트롤러가 없기 때문에 리소스에 있는 hello-static.html을 반환
+
+### MVC와 템플릿 엔진
+> 서버에서 변형하여 HTML에 내려주는 방식
+
+### API
+> 앱 클라이언트와 JSON으로 통신
+> 서버끼리 통신할 때
