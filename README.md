@@ -151,3 +151,18 @@ public void setMemberController(MemberService memberService) {
 * GET - 조회
 * POST - 등록
 
+---
+
+## 스프링 DB 접근 기술
+### H2 데이터베이스 설치
+
+개발이나 테스트 용도로 가볍고 편리한 DB, 웹 화면 제공
+
+다운로드 : https://h2database.com/h2-2019-10-14.zip
+
+```
+{dir}\h2\bin\h2.bat 실행  
+test.mv.db 파일 생성 확인 (C:\Users\{user}에 있음)
+이후 `jdbc:h2:tcp://localhost/~/test`로 연결
+```
+
