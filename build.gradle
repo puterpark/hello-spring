@@ -21,6 +21,9 @@ dependencies {
 	// 스프링부트 웹
 	// 톰캣이 내장되어 있음, 덕분에 톰캣을 설치할 필요가 없다.
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// jdbc, h2 데이터베이스 관련 라이브러리
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	runtimeOnly 'com.h2database:h2'
 	// JUnit 5
 	// assertj, mockito : 테스트를 용이하게 해줌
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
