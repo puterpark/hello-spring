@@ -178,3 +178,17 @@ test.mv.db 파일 생성 확인 (C:\Users\{user}에 있음)
 
 > 클래스 내에 생성자가 한 개만 있으면 `@Autowired`의 생략이 가능하다.
 
+### JPA
+
+JPA는 기존의 반복 코드는 물론이고, 기본적인 SQL도 JPA가 직접 만들어서 실행해준다.  
+JPA를 사용하면 SQL과 데이터 중심의 설계에서 객체 중심의 설계로 패러다임을 전환을 할 수 있다.  
+JPA를 사용하면 개발 생산성을 크게 높일 수 있다.
+
+#### application.properties
+`show-sql` : JPA가 생성하는 SQL 출력  
+`ddl-auto` : JPA는 테이블을 자동으로 생성 기능 제공 (none : 해당 기능 사용안함, create : 사용)
+
+> *참고*  
+> JPA를 통한 모든 데이터 변경은 트랜잭션 안에서 실행해야 한다.  
+> `@Transactional` 사용
+
